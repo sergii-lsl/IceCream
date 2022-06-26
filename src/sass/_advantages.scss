@@ -1,0 +1,88 @@
+.advantages {
+    background-color: #FFF5F6;
+}
+
+.advantages-container {
+    padding-right: 70px;
+}
+
+.advantages__amount {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-title);
+    margin-bottom: 18px;
+
+    display: inline-block;
+}
+
+.kg {
+    font-family: 'Titan One';
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-title);
+    display: inline-block;
+    margin-bottom: 18px;
+    margin-left: -11px;
+    padding-left: 0;
+}
+
+.advantages__description {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.advantages__description:last-child {
+    margin-bottom: 0;
+}
+
+.advantages__amount--milk::before {
+    background-image: url("../images/advantages-icons/milk.png");
+    content: " ";
+    height: 50px;
+    width: 33px;
+
+    display: block;
+    margin-bottom: 16px;
+}
+
+.advantages__amount--milk:hover::before {
+    filter: hue-rotate(370deg) saturate(5);
+}
+
+.advantages__amount--apples::before {
+    background-image: url("../images/advantages-icons/apples.png");
+    content: " ";
+    height: 50px;
+    width: 50px;
+
+    display: block;
+    margin-bottom: 16px;
+}
+
+.advantages__amount--apples:hover::before {
+    filter: hue-rotate(370deg) saturate(5);
+}
+
+.advantages__amount--heart::before {
+    background-image: url("../images/advantages-icons/heart.png");
+    content: " ";
+    height: 50px;
+    width: 46px;
+
+    display: block;
+    margin-bottom: 16px;
+}
+
+.advantages__amount--heart:hover::before {
+    filter: hue-rotate(370deg) saturate(5);
+}
