@@ -10,10 +10,11 @@
   justify-content: center;
   position: fixed;
  top: 0;
- height: 68px;
   z-index: 500;
-  background-color:#ffb8caf1;
+  background-color:#ffb8caf2;
   border-radius: 7px;
+  max-width: 320px;
+  padding-top: 8px;
 }
 
 .logo { 
