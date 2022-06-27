@@ -6,15 +6,14 @@
   overflow: hidden;
   position: relative;
   height: 502px;
+  padding-top: 194px;
 
   background-color: var(--color-bg-main);
 }
 
 .hero__title {
-  padding-top: 194px;
-
   margin-bottom: 20px;
-
+  max-width: 218px;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
