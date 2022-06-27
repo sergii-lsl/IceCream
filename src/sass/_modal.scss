@@ -54,6 +54,7 @@
   text-align: center; //right
   letter-spacing: 0.005em;
   color: rgb(148, 56, 148);
+  margin-bottom: 10px;
 }
 
 .role-groupe {
@@ -69,6 +70,7 @@
   margin-bottom: 10px;
   height: 58px;
   width: 95%;
+  position: relative;
 }
 
 .data-box input {
@@ -110,6 +112,25 @@
 .client-data,
 .data-field {
   font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(148, 56, 148);
+
+}
+.client-data {
+  position: absolute;
+  top:17px;
+  left:15px;
+  transform: translate(-17%, -15%);
+}
+
+.data-field:focus + .client-data,
+.data-field:not(:placeholder-shown) + .client-data {
+transform: translate(-16px, -31px);
+}
+
+.client-data--texteria {
+    font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   color: rgb(148, 56, 148);

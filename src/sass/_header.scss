@@ -14,9 +14,11 @@
   z-index: 500;
   background-color:#ffb8ca50;
   border-radius: 7px;
+  width: 320px;
 }
 
 .logo { 
+  padding: 1px;
   animation:jello-horizontal 12s infinite alternate-reverse;
 }
 .button-menu {
