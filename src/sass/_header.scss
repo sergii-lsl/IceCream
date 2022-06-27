@@ -13,7 +13,6 @@
   z-index: 500;
   background-color:#ffb8caf2;
   border-radius: 7px;
-  max-width: 320px;
   padding-top: 8px;
 }
 
@@ -21,6 +20,33 @@
   padding: 1px;
   animation:jello-horizontal 12s infinite alternate-reverse;
 }
+
+.navigation {
+  @media screen and (min-width:1280px) {
+    display:flex;
+  }
+}
+
+.navigation__list {
+  @media screen and (max-width:1279px) {
+    display: none;}
+    @media screen and (min-width:1280px) 
+    {display: flex;}
+      
+    }
+
+    .navigation__item {
+      @media screen and (min-width:1280px) {
+        display: inline-block;
+ font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF; 
+margin-right: 35px;
+}
+    }
+
 .button-menu {
   padding: 0;
   background-color: transparent;
@@ -32,10 +58,13 @@
 transform: scale(0.7);
 transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  @media screen and (min-width:1280px) {
+    display: none;
+  }
 }
 
 .button-buy--tablet {
-  @media screen and (max-width:320px) {
+  @include mq (mobile-only) {
     display: none;
   }
 
