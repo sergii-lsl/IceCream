@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--color-bg-light);
 
-  &__content {
+  &__container {
     @include mq(tablet) {
       display: flex;
       justify-content: space-between;
@@ -13,11 +13,7 @@
   }
 
   &__title {
-    margin-bottom: 40px;
 
-    @include mq(desktop) {
-      margin-bottom: 60px;
-    }
   }
 
   &__subtitle {
@@ -27,14 +23,16 @@
     line-height: 1.17;
     text-transform: uppercase;
     width: 230px;
-    margin-bottom: 16px;
 
-    @include mq(tablet-only) {
-      margin-bottom: 12px;
+    margin-bottom: 40px;
+
+    @include mq(desktop) {
+      margin-bottom: 60px;
     }
   }
 
   &__quasititle {
+    display: block;
     font-family: 'Titan One';
     color: var(--color-text-title);
     font-size: 34px;
@@ -42,6 +40,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     width: 200px;
+
+    margin-top: 16px;
+
+    @include mq(tablet-only) {
+      margin-top: 12px;
+    }
   }
 
   &__contacts {
@@ -50,9 +54,7 @@
     }
   }
 
-  &__socials {
-    margin-bottom: 40px;
-  }
+
 
   &__phone {
     font-family: 'DM Sans';
@@ -75,35 +77,29 @@
   &__copyright {
     padding-top: 16px;
     border-top: 1px solid #e1e1e1;
-
-    @include mq (tablet) {
-      width: 100vw;
-      margin-left: calc((104vw - 768px)/(-2));
-    }
-
-    @include mq (desktop) {
-      width: 100vw;
-      margin-left: calc((104vw - 1200px)/(-2));
-    }
-  }
-
-  &__copyright-text {
-    font-family: 'DM Sans';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
-
+    
     color: var(--color-text-paragraph);
     margin: 0 auto;
-    @include mq (mobile-only) {
-      width: 150px;
+    
+    &--mobile {
+      @include mq(tablet) {
+        display: none;
+      }
     }
+  }
+
+  &__copyright-text {
+
   }
 }
 .socials-list {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 40px;
 }
 .socials-item {
   &:not(:last-child) {
