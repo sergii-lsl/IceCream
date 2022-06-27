@@ -58,3 +58,17 @@
             transform: scale3d(1, 1, 1);
   }
 }
+
+@keyframes changeColor {
+  from {
+    filter: hue-rotate(365deg) saturate(1);
+  }
+
+  50% {
+    filter: hue-rotate(370deg) saturate(5);
+  }
+
+  to {
+    filter: hue-rotate(365deg) saturate(1);
+  }
+}
