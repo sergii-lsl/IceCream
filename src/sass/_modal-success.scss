@@ -6,6 +6,13 @@
    background-color: var(--color-text-lable);
    margin-left: auto;
    margin-right: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 40px 20px;
+   max-height: 100%;
+
+
  
  
    @include mq (mobille-only) {
@@ -18,12 +25,8 @@
      width: 50vw;
      left: 50%;
      transform: translate(-50%, -50%); 
-     max-height: 100vh;
    }
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 40px 20px;
+
  
    &__title {
      font-family: 'Titan One';
@@ -35,6 +38,11 @@
      margin-top: 16px;
      text-align: center;
    }
+
+   &__img {
+    width: 50%;
+    align-items: center;
+  }
    
    &__subtitle {
      font-family: 'Titan One';
@@ -48,7 +56,25 @@
    }
    
      &__button {
-       margin-top: 20px;
+      width: auto;
+      height: auto;
+      padding: 10px;
+      display: flex;
+      margin-top: 20px;
+      align-content: center;
+      justify-content: center;
+     }
+
+     &__back {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--color-white);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
      }
  }
+
+
+
  
