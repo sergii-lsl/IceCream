@@ -12,6 +12,10 @@
 
 .customers-reviews {
    background-color: var(--color-white);
+   @include mq(not-desktop){
+    padding-top: 0;
+    padding-bottom: 0;
+   }
 
 }
 
@@ -21,9 +25,9 @@
     z-index: 2;
 
     font-family: DM Sans, sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.58;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2.58;
     color: var(--color-text-accent);
 
     text-align: center;
