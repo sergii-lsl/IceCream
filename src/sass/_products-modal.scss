@@ -22,7 +22,6 @@
   position: absolute;
   border-radius: 22px;
   background-color: var(--color-bg-main);
-  //   background-image: url(../images);
 
   display: flex;
   flex-direction: column;
@@ -91,6 +90,19 @@
   border: none;
   fill: var(--color-white);
   background-color: var(--color-btn-active);
+
+  &:hover,
+  &:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(#fff, 0);
+    background-color: transparent;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--color-btn-active);
+    }
+  }
 }
 
 .products__item-coffee .close-button {
