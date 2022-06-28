@@ -1,15 +1,3 @@
-.gallery__section.section {
-  padding: 40px 0;
-
-  @include mq(tablet) {
-    padding: 40px;
-  }
-
-  @include mq(desktop) {
-    padding: 60px;
-  }
-}
-
 .gallery {
   display: flex;
   margin-left: auto;
