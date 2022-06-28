@@ -194,3 +194,57 @@ transform: translate(-16px, -31px);
   margin-right: 4px;
 }
 }
+
+.success-modal {
+  top: 50%;
+  transform: translatey(-50%);
+  position: absolute;
+  border-radius: 22px;
+  background-color: var(--color-text-lable);
+  margin-left: auto;
+  margin-right: auto;
+
+
+  @include mq (mobille-only) {
+    min-width: 320px;
+    // max-width: 550px;
+    width: 100vw;
+  }
+
+  @media screen and (min-width: 650px) {
+    width: 50vw;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    max-height: 100vh;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+
+  &__title {
+    font-family: 'Titan One';
+    color: var(--color-text-title);
+    font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  &__subtitle {
+    font-family: 'Titan One';
+    color: var(--color-text-paragraph);
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+    &__button {
+      margin-top: 20px;
+    }
+}
