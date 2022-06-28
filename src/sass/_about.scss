@@ -23,7 +23,9 @@
  
 
 .about__container {
-    max-width: 1200px;
+    // max-width: 1200px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -35,7 +37,7 @@
     background-image: url(../images/about/back-milk.png);
     background-size: contain;
         background-repeat: no-repeat;
-        background-position: 0 548px;
+        background-position: 0 88%;
 
         @media (min-device-pixel-ration: 2),
             (min-resolution: 192dpi),
@@ -45,19 +47,19 @@
                     background-image: url(../images/about/back-milk@2x.png);
                         background-size: contain;
                         background-repeat: no-repeat;
-                        background-position: 0 548px;
+                        background-position: 0 88%;
         
                 
             }}
-    @media screen and (min-width: 320px) {
-            width: 320px;}
+    // @media screen and (min-width: 320px) {
+    //         width: 320px;}
 
             // @media screen and (max-width: 320px) {
     
 
         @media screen and (min-width: 768px) {
             width: 768px;
-            background-position: none;
+            background-image: none;
 
 
             
@@ -92,7 +94,7 @@
     font-size: 18px;
     line-height: 1.1667;
     
-    text-align: center;
+    align-self: center;
     text-transform: uppercase;
     
     color: #FFA5BA;
@@ -115,7 +117,7 @@
     font-weight: 400;
     font-size: 34px;
     line-height: 1.02;
-    text-align: center;
+    align-self: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     
@@ -146,7 +148,8 @@
 
 .about__splash {
     display: block;
-    min-width: 100%;
+    // min-width: 100%;
+    align-self: center;
     height: auto;
 }
 
@@ -155,7 +158,7 @@
     padding-top: 40px;
     padding-bottom: 60px;
     // max-width: 320px;
-    width: 220px;
+    max-width: 463px;
     @media screen and (min-width: 768px) {
             width: 334px;
             margin-left: 32px;
