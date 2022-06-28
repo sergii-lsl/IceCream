@@ -3,6 +3,7 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const closeMenuOnModal = document.querySelector("[data-modal-mob-open]");
   const closeMenuLink1 = document.querySelector("[data-link1-close]");
   const closeMenuLink2 = document.querySelector("[data-link2-close]");
   const closeMenuLink3 = document.querySelector("[data-link3-close]");
@@ -28,6 +29,7 @@
   closeMenuLink3.addEventListener('click', toggleMenu);
   closeMenuLink4.addEventListener('click', toggleMenu);
   closeMenuLink5.addEventListener('click', toggleMenu);
+  closeMenuOnModal.addEventListener('click', toggleMenu);
 
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.
