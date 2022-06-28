@@ -7,26 +7,22 @@
 }
 
 .container--flex {
-  @media screen and (max-width:320px) {
-     padding-top: 8px;
-  }
-  @media screen and (max-width:1279px) {
+
+  @include mq (not-desktop) {
+
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
- top: 0;
+  top: 0;
   z-index: 500;
   background-color:#ffb8caf2;
   border-radius: 7px;
- }
 
-  @media screen and (min-width:321px) {
-     padding-top: 32px;
-  }
-   @media screen and (min-width:1280px) {
+  padding-top: 8px;}
+  @include mq(desktop) {
      position: fixed;
- top: 0;
+  top: 0;
   z-index: 500;
     background-color:#ffb8caf2;
      border-radius: 7px;
@@ -35,7 +31,7 @@
 }
 
 .navigation {
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width:1200px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,15 +43,15 @@
   animation:jello-horizontal 12s infinite alternate-reverse;
 }
 .navigation__list {
-  @media screen and (max-width:1279px) {
+  @media screen and (max-width:1199px) {
     display: none;}
-    @media screen and (min-width:1280px) 
-    {display: flex;
-    }
+
+    @media screen and (min-width:1200px) 
+    {display: flex;}
     }
 
     .navigation__link {
-      @media screen and (min-width:1280px) {
+      @media screen and (min-width:1200px) {
         padding:4px;
         display: inline-block;
          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,7 +64,7 @@
     }
 
     .navigation__item {
-      @media screen and (min-width:1280px) {
+      @media screen and (min-width:1200px) {
         display: inline-block;
  font-style: normal;
 font-weight: 700;
@@ -93,17 +89,16 @@ margin-right: 35px;
 transform: scale(0.7);
 transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width:1200px) {
     display: none;
   }
 }
 
 .button-buy--tablet {
-  @include mq (mobile-only) {
     display: none;
-  }
 
-  @media screen and (min-width:321px) {
+
+  @include mq (tablet-only) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,9 +125,7 @@ transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 transform: scale(0.7);
 transition:250ms cubic-bezier(0.4, 0, 0.2, 1);}
 }
-@media screen and (min-width:1280px) {
-  display: none;
-}
+
 }
 .button-buy__icon {
   justify-content: center;
@@ -143,9 +136,9 @@ transition:250ms cubic-bezier(0.4, 0, 0.2, 1);}
 }
 
 .button-buy--leptop {
-  @media screen and (max-width:1279px) {
-    display: none;}
-    @media screen and (min-width:1280px) {
+    display: none;
+
+    @media screen and (min-width:1200px) {
     display: flex;
   justify-content: center;
   align-items: center;
