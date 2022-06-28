@@ -7,7 +7,7 @@
 }
 
 .container--flex {
-
+padding-top: 2px;
   @include mq (not-desktop) {
 
   display: flex;
@@ -18,15 +18,13 @@
   z-index: 500;
   background-color:#ffb8caf2;
   border-radius: 7px;
-
-  padding-top: 8px;}
+}
   @include mq(desktop) {
      position: fixed;
   top: 0;
   z-index: 500;
     background-color:#ffb8caf2;
      border-radius: 7px;
-  padding-top: 37px;
  }
 }
 
