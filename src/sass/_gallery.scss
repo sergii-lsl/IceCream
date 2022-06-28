@@ -88,9 +88,6 @@
     }
 
     &--changed {
-      @include mq(mobile-only) {
-        max-width: 40px;
-      }
       @include mq(tablet) {
         max-width: 86px;
       }
@@ -108,6 +105,18 @@
       }
       @include mq(desktop) {
         margin-bottom: 6px;
+      }
+    }
+  }
+
+  &__photo {
+    @include mq(mobile-only) {
+      width: calc(100vw / 7);
+    }
+
+    &--big {
+      @include mq(mobile-only) {
+        width: calc(100vw / 7 * 2);
       }
     }
   }
