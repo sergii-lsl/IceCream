@@ -101,7 +101,7 @@
     margin-bottom: 15px;
 
     @media screen and (min-width: 768px) {
-            font-size: 16px;
+            font-size: 26px;
             line-height: 1.11;
         }
     
@@ -162,6 +162,7 @@
     @media screen and (min-width: 768px) {
             width: 334px;
             margin-left: 32px;
+            padding-top: 0px;
         }
     
         @media screen and (min-width: 1200px) {
