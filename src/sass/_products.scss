@@ -15,11 +15,13 @@
     color: var(--color-text-lable);
 
     @include mq(tablet) {
+      margin-bottom: 18px;
       font-size: 26px;
       line-height: 1.15;
     }
 
     @include mq(desktop) {
+      margin-bottom: 16px;
       font-size: 30px;
       line-height: 1.13;
       letter-spacing: 0.04em;
@@ -105,17 +107,33 @@
       background-repeat: no-repeat;
       background-image: url('/src/images/products/ice_sm.png');
 
+      @include mq(mobile-only) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include mq(retina2x) {
+          background-image: url('/src/images/products/ice@2x_sm.png');
+        }
+      }
+
       @include mq(tablet) {
         top: -26px;
         height: 224px;
         width: 224px;
         background-image: url('/src/images/products/home-pic1_md.png');
+        @include mq(retina2x) {
+          background-image: url('/src/images/products/home-pic1@2x_md.png');
+        }
       }
       @include mq(desktop) {
         top: -64px;
         height: 394px;
         width: 368px;
         background-image: url('/src/images/products/home-pic1_lg.png');
+
+        @include mq(retina2x) {
+          background-image: url('/src/images/products/home-pic1@2x_lg.png');
+        }
       }
     }
   }
@@ -158,17 +176,34 @@
       background-repeat: no-repeat;
       background-image: url('/src/images/products/ice-1_sm.png');
 
+      @include mq(mobile-only) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include mq(retina2x) {
+          background-image: url('/src/images/products/ice@2x-1_sm.png');
+        }
+      }
+
       @include mq(tablet) {
         top: -26px;
         height: 224px;
         width: 224px;
         background-image: url('/src/images/products/home-pic2_md.png');
+
+        @include mq(retina2x) {
+          background-image: url('/src/images/products/home-pic2@2x_md.png');
+        }
       }
       @include mq(desktop) {
         top: -64px;
         height: 394px;
         width: 368px;
         background-image: url('/src/images/products/home-pic2_lg.png');
+
+        @include mq(retina2x) {
+          background-image: url('/src/images/products/home-pic2@2x_lg.png');
+        }
       }
     }
   }
@@ -208,17 +243,34 @@
       background-repeat: no-repeat;
       background-image: url('/src/images/products/ice-2_sm.png');
 
+      @include mq(mobile-only) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include mq(retina2x) {
+          background-image: url('/src/images/products/ice@2x-2_sm.png');
+        }
+      }
+
       @include mq(tablet) {
         top: -26px;
         height: 224px;
         width: 224px;
         background-image: url('/src/images/products/home-pic3_md.png');
+
+        @include mq(retina2x) {
+          background-image: url('/src/images/products/home-pic3@2x_md.png');
+        }
       }
       @include mq(desktop) {
         top: -64px;
         height: 394px;
         width: 368px;
         background-image: url('/src/images/products/home-pic3_lg.png');
+
+        @include mq(retina2x) {
+          background-image: url('/src/images/products/home-pic3@2x_lg.png');
+        }
       }
     }
   }
@@ -257,9 +309,6 @@
 
   &__text {
     margin-bottom: 32px;
-
-    font-family: 'DM Sans';
-
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
