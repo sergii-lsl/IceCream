@@ -21,7 +21,11 @@
   transform: translate(-50%, 0);
   position: absolute;
   border-radius: 22px;
-  background-color: var(--color-bg-main);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-bg-main),
+    rgba(16, 13, 89, 0.4)
+  );
 
   display: flex;
   flex-direction: column;
@@ -40,11 +44,19 @@
 }
 
 .products__item-coffee .products-window {
-  background-color: var(--color-coffee-style);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-coffee-style),
+    rgba(16, 13, 89, 0.4)
+  );
 }
 
 .products__item-milkshakes .products-window {
-  background-color: var(--color-food-style);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-food-style),
+    rgba(16, 13, 89, 0.4)
+  );
 }
 
 .modal-subtitle {

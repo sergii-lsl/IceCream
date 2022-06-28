@@ -123,6 +123,11 @@
         }
       }
     }
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 
   // Products 2
@@ -350,4 +355,12 @@
 
     // --------- hover/focus end
   }
+
+  // &__item-cream + &::before {
+  //   &:hover,
+  //   &:focus {
+  //     transform: scale(1.1);
+  //     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  //   }
+  // }
 }
