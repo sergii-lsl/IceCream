@@ -21,8 +21,11 @@
   transform: translate(-50%, 0);
   position: absolute;
   border-radius: 22px;
-  background-color: var(--color-bg-main);
-  //   background-image: url(../images);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-bg-main),
+    rgb(140, 101, 111)
+  );
 
   display: flex;
   flex-direction: column;
@@ -41,11 +44,19 @@
 }
 
 .products__item-coffee .products-window {
-  background-color: var(--color-coffee-style);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-coffee-style),
+    rgb(147, 107, 71)
+  );
 }
 
 .products__item-milkshakes .products-window {
-  background-color: var(--color-food-style);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-food-style),
+    rgb(72, 130, 61)
+  );
 }
 
 .modal-subtitle {
@@ -55,6 +66,8 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  color: #ffffff;
 
   @include mq(tablet) {
     font-size: 24px;
@@ -69,13 +82,15 @@
   }
 }
 .modal-text {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 152%;
   letter-spacing: 0.04em;
+  color: #ffffff;
 
   @include mq(desktop) {
     font-size: 16px;
+    line-height: 130%;
   }
 }
 
@@ -90,13 +105,23 @@
   border-radius: 50%;
   border: none;
   fill: var(--color-white);
-  background-color: var(--color-btn-active);
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(#fff, 0);
+
+    color: rgb(185, 49, 154);
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--color-btn-active);
+    }
+  }
 }
 
-.products__item-coffee .close-button {
-  background-color: var(--color-btn-active);
-}
-
-.products__item-milkshakes .close-button {
-  background-color: var(--color-btn-active);
+.close-button_icon {
+  fill: var(--color-btn-active);
 }
