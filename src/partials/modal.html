@@ -1,48 +1,34 @@
 <div class="backdrop is-hidden" data-modal>
   <section class="modal__window">
-    <div class="madal_container">
-
-      <form class="js-client-data" autocomplete="off">
-        <button data-modal-close class="round-button btn" type="button">
-          <svg width="25" height="25">
-            <use class="round-button_icon" href="./images/symbol-defs.svg#close"></use>
-          </svg>
-        </button>
-        <div>
-          <h2 class="form-title">Leave your details, we will call you back</h2>
-        </div>
-        <div class="role-groupe" role="groupe">
-          <div class="data-box">
-            <input class="data-field" placeholder=" " type="text" name="name" id="name" />
-            <label class="client-data" for="name">Name</label autocomplete="on">
-          </div>
-          <div class="data-box">
-            <input class="data-field" placeholder=" " type="tel" name="name" id="phone-number" />
-            <label class="client-data" for="phone-number">Tel </label>
-          </div>
-          <div class="data-box">
-            <input class="data-field" placeholder=" " type="email" name="name" id="e-mail" />
-            <label class="client-data" for="e-mail">Mail</label>
-          </div>
-          <div class="data-box-feed">
-            <label class="client-data--texteria" for="comment">What kind of cooperation do you
-              interested</label>
-            <textarea name="feedback" rows="5" class="feedback" id="comment" placeholder="Enter the text"></textarea>
-          </div>
-          <div class="agreement">
-            <label class="agreement__row">
-              <input class="agreement__checkbox" type="checkbox" name="" value="checkbox-box" />
-              <p class="agreement__text">I give a permission for the collection my personal data
-              </p>
-            </label>
-          </div>
-        </div>
-        <div class="modal_button">
-          <button data-modal-success-open class="button-sub" type="submit">
-            <p class="button-sub__text">Send</p>
-          </button>
-        </div>
-      </form>
-    </div>
+    <button data-modal-close class="round-button btn" type="button">
+      <svg width="25" height="25">
+        <use class="round-button_icon" href="./images/symbol-defs.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="form-title">Leave your details, we will call you back</h2>
+    <form class="role-groupe" autocomplete="off">
+      <label class="data-box" for="name"><span class="client-data">Name</span>
+        <input class="data-field" placeholder=" " type="text" name="name" id="name" />
+      </label>
+      <label class="data-box" for="name"><span class="client-data">Tel</span>
+        <input class="data-field" placeholder=" " type="text" name="name" id="name" />
+      </label>
+      <label class="data-box" for="name"><span class="client-data">Mail</span>
+        <input class="data-field" placeholder=" " type="text" name="name" id="name" />
+      </label>
+      <div class="data-box-feed">
+        <label  for="comment"><span class="client-data--texteria">What kind of cooperation do you
+          interested</span></label>
+        <textarea name="feedback" rows="5" class="feedback" id="comment" placeholder="Enter the text"></textarea>
+      </div>
+      <label class="agreement">
+        <input class="agreement__checkbox" type="checkbox" name="" value="checkbox-box" />
+        <p class="agreement__text">I give a permission for the collection my personal data
+        </p>
+      </label>
+      <button data-modal-success-open class="button-sub" type="submit">
+        <p class="button-sub__text">Send</p>
+      </button>
+    </form>
   </section>
 </div>
