@@ -1,8 +1,7 @@
 <section class="hero container" id="hero">
   <div class="hero__container">
     <h1 class="hero__title">
-      ice cream<br />
-      made with <br />
+      ice cream made with
       <span class="hero__title--accept"> passion</span>
     </h1>
     <ul class="hero__btn">
@@ -16,23 +15,108 @@
   </div>
   <div class="decoration">
     <div class="decoration__elipse"></div>
+
+    <picture>
+      <!-- набір зображень для телефону -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          images/hero/ice-cream-cone_mobile.png    1x,
+          images/hero/ice-cream-cone@2x_mobile.png
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/hero/ice-cream-cone_tablet.png    1x,
+          images/hero/ice-cream-cone@2x_tablet.png
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          images/hero/ice-cream-cone_desktop.png    1x,
+          images/hero/ice-cream-cone@2x_desktop.png
+        "
+        type="image/jpg"
+      />
+      <img
+        class="hero__img"
+        src="images/hero/ice-cream-cone_mobile.png"
+        alt="ice-cream-cone"
+        width="171"
+        heignt="410"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/hero/so-tasty_tablet.png    1x,
+          images/hero/so-tasty@2x_tablet.png
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          images/hero/so-tasty_desktop.png    1x,
+          images/hero/so-tasty@2x_desktop.png
+        "
+        type="image/jpg"
+      />
+      <img
+        class="decoration__so-tasty"
+        src="images/hero/so-tasty_tablet.png"
+        alt="so-tasty"
+        width="190"
+        heignt="150"
+      />
+    </picture>
+    <div class="decoration__circle"></div>
+    <p class="decoration__number">16</p>
+    <p class="decoration__text">cafes</p>
+    <div class="decoration__circle decoration__circle--position"></div>
+    <p class="decoration__number decoration__number--position">23</p>
+    <p class="decoration__text decoration__text--position">food trucks</p>
   </div>
-  <picture>
-    <!-- набір зображень для телефону -->
-    <source
-      media="(max-width: 767px)"
-      srcset="
-        images/hero/ice-cream-cone_mobile.png    1x,
-        images/hero/ice-cream-cone@2x_mobile.png
-      "
-      type="image/jpg"
-    />
-    <img
-      class="hero__img"
-      src="images/hero/ice-cream-cone_mobile.png"
-      alt="ice-cream-cone"
-      width="171"
-      heignt="410"
-    />
-  </picture>
+  <div class="hero__block">
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="images/hero/milk_tablet.png 1x, images/hero/milk@2x_tablet.png"
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          images/hero/milk_desktop.png    1x,
+          images/hero/milk@2x_desktop.png
+        "
+        type="image/jpg"
+      />
+      <img
+        class="decoration__milk"
+        src="images/hero/milk_tablet.png"
+        alt="milk"
+        width="124"
+        heignt="126"
+      />
+    </picture>
+    <div class="hero__block--position">
+      <p class="hero__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <div class="description__btn">
+        <a href="#about">
+          <svg width="8" height="8" class="description__icon">
+            <use href="/src/images/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
