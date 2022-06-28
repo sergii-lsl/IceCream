@@ -90,6 +90,7 @@
 
   @include mq(desktop) {
     font-size: 16px;
+    line-height: 130%;
   }
 }
 
@@ -120,14 +121,6 @@
     }
   }
 }
-
-// .products__item-coffee .close-button {
-//   background-color: var(--color-btn-active);
-// }
-
-// .products__item-milkshakes .close-button {
-//   background-color: var(--color-btn-active);
-// }
 
 .close-button_icon {
   fill: var(--color-btn-active);
