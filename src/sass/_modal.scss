@@ -30,20 +30,21 @@
   margin-right: auto;
   background-image: url(../images/hero/ice-cream-cone@2x_mobile.png);
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: 180px, 40px;
   background-position: 10px, 40px;
 
   @include mq (mobille-only) {
-    min-width: 320px;
-    // max-width: 550px;
-    width: 100vw;
+   min-width: 320px;
+   width: 100vw;
   }
 
-  @media screen and (min-width: 650px) {
-    width: 50vw;
+  @media screen and (min-width: 780px) {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
     left: 50%;
     transform: translate(-50%, -50%); 
-    max-height: 100vh;
+    max-height: 95%;    
   }
 }
 
@@ -82,7 +83,13 @@
   padding-left: 110px;//180
   padding-right: 10px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 780px) {
+    margin-bottom: 15px;
+    padding-left: 180px;
+  }
 }
+
 
 .data-box {
   margin-bottom: 10px;
@@ -125,6 +132,7 @@
 .data-box input:focus,
 .feedback:focus {
   border-color: var(--color-btn-active);
+
 }
 
 .client-data,
@@ -140,6 +148,7 @@
   top:17px;
   left:15px;
   transform: translate(-17%, -15%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .data-field:focus + .client-data,
