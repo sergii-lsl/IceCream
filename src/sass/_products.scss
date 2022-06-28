@@ -3,15 +3,11 @@
 
   &__labels {
     margin-bottom: 15px;
-
     font-family: 'Titan One';
-
     font-size: 18px;
     line-height: 1.17;
-
     text-align: center;
     text-transform: uppercase;
-
     color: var(--color-text-lable);
 
     @include mq(tablet) {
@@ -30,16 +26,12 @@
 
   &__title {
     margin-bottom: 148px;
-
     font-family: 'Titan One';
-
     font-size: 34px;
     line-height: 1.15;
-
     letter-spacing: 0.04em;
     text-align: center;
     text-transform: uppercase;
-
     color: var(--color-text-title);
 
     @include mq(tablet) {
@@ -74,10 +66,8 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-
     padding: 160px 40px 40px 40px;
     position: relative;
-
     background-color: var(--color-bg-main);
 
     @include mq(mobile-only) {
@@ -87,7 +77,6 @@
       width: 224px;
       padding: 118px 32px 40px 32px;
     }
-
     @include mq(desktop) {
       width: 368px;
       padding: 165px 61px 60px 61px;
@@ -99,10 +88,8 @@
       top: 0;
       left: 0;
       transform: translateY(-50%);
-
       height: 280px;
       width: 280px;
-
       background-size: contain;
       background-repeat: no-repeat;
       background-image: url('/src/images/products/ice_sm.png');
@@ -110,12 +97,10 @@
       @include mq(mobile-only) {
         left: 50%;
         transform: translate(-50%, -50%);
-
         @include mq(retina2x) {
           background-image: url('/src/images/products/ice@2x_sm.png');
         }
       }
-
       @include mq(tablet) {
         top: -26px;
         height: 224px;
@@ -144,10 +129,8 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-
     padding: 160px 40px 40px 40px;
     position: relative;
-
     background-color: var(--color-coffee-style);
 
     @include mq(mobile-only) {
@@ -168,10 +151,8 @@
       top: 0;
       left: 0;
       transform: translateY(-50%);
-
       height: 280px;
       width: 280px;
-
       background-size: contain;
       background-repeat: no-repeat;
       background-image: url('/src/images/products/ice-1_sm.png');
@@ -214,10 +195,8 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-
     padding: 160px 40px 40px 40px;
     position: relative;
-
     background-color: var(--color-food-style);
 
     @include mq(tablet) {
@@ -235,10 +214,8 @@
       top: 0;
       left: 0;
       transform: translateY(-50%);
-
       height: 280px;
       width: 280px;
-
       background-size: contain;
       background-repeat: no-repeat;
       background-image: url('/src/images/products/ice-2_sm.png');
@@ -278,14 +255,11 @@
   &__subtitle {
     display: flex;
     flex-direction: column;
-
     font-family: 'Titan One';
-
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: var(--color-white);
 
     @include mq(tablet) {
@@ -323,17 +297,14 @@
 
     @include mq(desktop) {
       margin-bottom: 60px;
-
       font-size: 16px;
     }
   }
 
   &__btn {
     display: block;
-
     width: 40px;
     height: 40px;
-
     border: none;
     border-radius: 50%;
 
@@ -360,7 +331,6 @@
     position: relative;
     top: 2px;
     transform: translateX(-2%);
-
     fill: var(--color-btn-active);
     border-radius: 50%;
 
