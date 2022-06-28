@@ -152,7 +152,7 @@
 }
 
 .data-field:focus + .client-data,
-.data-field:not(:placeholder-shown) + .client-data {
+.data-field:not(:placeholder-shown) .client-data {
 transform: translate(-16px, -31px);
 }
 
