@@ -12,6 +12,10 @@
 
 .customers-reviews {
    background-color: var(--color-white);
+   @include mq(not-desktop){
+    padding-top: 0;
+    padding-bottom: 0;
+   }
 
 }
 
@@ -21,9 +25,9 @@
     z-index: 2;
 
     font-family: DM Sans, sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.58;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2.58;
     color: var(--color-text-accent);
 
     text-align: center;
@@ -64,6 +68,7 @@
     position: absolute;
     top: -14px;
     left: -32px;
+   
 
     width: 54px;
     height: 40px;
@@ -88,7 +93,7 @@
 
     position: absolute;
     bottom: -48px;
-    left: 39%;
+    left: 40%;
 
     width: 32px;
     height: 4px;
@@ -97,12 +102,12 @@
 
     @media screen and (min-width: 768px) {
         top: 135px;
-        left: 44%;
+        left: 45%;
     }
 
     @media screen and (min-width: 1280px) {
         top: 120px;
-        left: 47%;
+        left: 48%;
     }
 }
 
