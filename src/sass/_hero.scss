@@ -72,6 +72,7 @@
     margin-bottom: 40px;
   }
 }
+
 .hero__item:not(:last-child) {
   margin-right: 15px;
 }
@@ -233,6 +234,12 @@
     height: 26px;
   }
 }
+.description__btn:hover,
+.description__btn:focus {
+  animation: pulse 1.4s;
+  box-shadow: 0 0 0 2em #fff0;
+}
+
 .description__icon {
   fill: var(--color-text-title);
 }
