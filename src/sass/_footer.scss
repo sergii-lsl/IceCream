@@ -107,11 +107,11 @@
   &__copyright {
     padding-top: 16px;
     padding-bottom: 8px;
-    border-top: 1px solid #e1e1e1;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
+    position: relative;
     
     color: var(--color-text-paragraph);
     margin: 0 auto;
@@ -125,6 +125,23 @@
     &--mobile {
       @include mq(tablet) {
         display: none;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 99vw;
+      height: 1px;
+      background-color: #E1E1E1;
+      margin-left: -20px;
+      @include mq (tablet) {
+        margin-left: calc( (104vw - 768px) / -2);
+      }
+      @include mq (desktop) {
+        margin-left: calc( (102vw - 1200px) / -2);
       }
     }
   }
