@@ -115,6 +115,12 @@
 
   border-radius: 50%;
   background-color: var(--color-text-lable);
+
+  @media screen and (min-width: 400px) and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   @include mq(tablet) {
     height: 333px;
     width: 335px;
@@ -131,9 +137,15 @@
 }
 .hero__img {
   position: absolute;
-  right: 35px;
+  left: 120px;
   top: 92px;
   z-index: 2;
+  
+  @media screen and (min-width: 400px) and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   @include mq(tablet) {
     height: 336px;
     width: 143px;
