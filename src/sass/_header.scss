@@ -1,17 +1,14 @@
 
 .header {
-  @media screen and (min-width:321px) and (max-width:1279px) {
+  @media screen and (min-width:321px) {
         display: flex;
         justify-content: center;
+        padding: 25px 0;
+        background-color:#ffb8ca;
     }
 }
 
 .container--flex {
-padding-top: 2px;
-  padding-left: 20px;
-   padding-right: 20px;
-   margin: 0 auto;
-   width: 100vw;
   @include mq (not-desktop) {
 
   display: flex;
@@ -34,8 +31,7 @@ padding-top: 2px;
   display: flex;
 flex-wrap: wrap;
 align-items: center;
-justify-content: space-between
-
+justify-content: space-between;
  }
 }
 
