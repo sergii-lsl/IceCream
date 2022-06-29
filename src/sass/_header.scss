@@ -1,18 +1,17 @@
 
 .header {
-  @media screen and (min-width:321px) {
-        display: flex;
-        justify-content: center;
-        padding: 25px 0;
-        background-color:#ffb8ca;
-    }
-    @media screen and (min-width:1200px) {
       position: fixed;
       z-index: 500;
       justify-content: center;
       width: 100%;
       padding: 27px 0;
-    }
+           background-color:#ffb8ca;
+           border-radius:9px;
+           @media screen and (min-width:768px){
+            display: flex;
+            justify-content: center;
+           }
+
 }
 
 .container--flex {
