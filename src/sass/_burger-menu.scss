@@ -25,6 +25,10 @@ li {
   pointer-events: none;
   transition: transform 600ms ease-in-out;
 
+  @include mq(mobile) {
+    width: 200px;
+  }
+
   @include mq(tablet) {
     width: calc((100vw - 768px) / 2 + 255px);
   }
@@ -95,10 +99,8 @@ li {
 }
 
 .button-buy__icon {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-left: 20px;
+  margin-top: 2px;
 }
 
 .mobile-menu {
