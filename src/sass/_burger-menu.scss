@@ -26,7 +26,7 @@ li {
   transition: transform 600ms ease-in-out;
 
   @include mq(mobile) {
-    width: 200px;
+    width: 250px;
   }
 
   @include mq(tablet) {
