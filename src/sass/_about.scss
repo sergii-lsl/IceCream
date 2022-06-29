@@ -2,10 +2,54 @@
     background-color: #fff5f6;
 
     max-width: 100%;
-   
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/about/back-milk-s-left.png),
+    url(../images/about/back-milk-s-right.png);
+        // background-size: contain;
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0 496px, 100% 496px;
+    
+
+        @media (min-device-pixel-ration: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .about {
+                background-image: url(../images/about/back-milk-s-@2x-left.png),
+                url(../images/about/back-milk-s-@2x-right.png);
+                // background-size: contain;
+                background-repeat: no-repeat, no-repeat;
+                    background-position: 0 496px, 100% 496px;
+            }
+        }
+    
+        @include mq(tablet) {
+            // width: 768px;
+            background-image: none;
+        }
+    
+        @include mq(desktop) {
+            // width: 1200px;
+    
+            background-image: url(../images/about/back-milk-lg-left.png),
+            url(../images/about/back-milk-lg-right.png);
+            // background-size: contain;
+            background-repeat: no-repeat, no-repeat;
+                background-position: 0 256px, 100% 256px;
+    
+            @media (min-device-pixel-ration: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .about {
+                    background-image: url(../images/about/back-milk-lg-@2x-left.png),
+                    url(../images/about/back-milk-lg-@2x-right.png);
+                    // background-size: contain;
+                background-repeat: no-repeat, no-repeat;
+                    background-position: 0 256px, 100% 256px;
+                }
+            }
+        }
 }
     
  
@@ -19,52 +63,10 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-   
-    background-color: #FFF5F6;
-    background-image: url(../images/about/back-milk.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 88%;
-
-     @media (min-device-pixel-ration: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                .about__container {
-                
-        background-image: url(../images/about/back-milk@2x.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 0 500px;
-        
-                
-            }}
-    @media screen and (min-width: 420px) {
-        background-position: 0 390px;;}
-
-            // @media screen and (max-width: 320px) {
-    @include mq(tablet) {
-        width: 768px;
-        background-image: none;   
-        }
     @include mq(desktop) {
-        width: 1200px;
-                    
-        background-image: url(../images/about/back-milk-lg.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 0 178px;
-                    
-    @media (min-device-pixel-ration: 2),
-           (min-resolution: 192dpi),
-           (min-resolution: 2dppx) {
-        .about__container {
-        background-image: url(../images/about/back-milk-lg-@2x.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 0 178px;
-                            }
-                        }
-                }
+            width: 1200px;}
+    // background-color: #FFF5F6;
+    
 }
 .about__label {
     font-family: 'Titan One';
@@ -180,7 +182,11 @@
 
 .about__btn {
     text-align: left;
-    
+    // font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.285;
+       
     border-radius: 24px;
     width: 176px;
     height: 44px;
@@ -200,7 +206,10 @@
 
     @include mq(tablet) {
             margin-top: 40px;
+            font-size: 18px;
+                line-height: 1.167;
         }   
+        
 }
 .about__btn:hover, .about__btn:focus {
     box-shadow: 0 8px 30px #51061966;
@@ -211,14 +220,3 @@ fill: #D41443;
 margin-left: 20px;
 }
 
-.about__button-text {
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-
-    color: #D41443;
-    padding: 0;
-    margin: 0;
-}
