@@ -67,11 +67,12 @@
   background-color: var(--color-text-lable);
 }
 
-.round-button:hover .round-button_icon {
+.round-button:hover .round-button_icon,
+.round-button:focus
+ {
   fill: var(--color-text-title);
+  outline: 1px solid var(--color-text-lable);
 }
-
-
 
 .form-title {
   // padding: 40px 40px 12px 40px;
@@ -194,8 +195,10 @@ transform: translate(-16px, -31px);
   color: var(--color-white);
 }
 
- .button-sub:hover{
-  box-shadow: 0px 8px 30px rgba(81, 6, 25, 0.6);
+ .button-sub:hover,
+ .button-sub:focus  {
+  // box-shadow: 0px 8px 30px rgba(81, 6, 25, 0.6);
+  outline: 1px solid var(--color-btn-active);
 }
 
 .modal_button {
@@ -214,10 +217,17 @@ transform: translate(-16px, -31px);
 &__checkbox {
   margin-top: 4px;
   margin-right: 8px;
+
+}
+
+&__checkbox:hover,
+&__checkbox:focus {
+  outline: 1px solid var(--color-btn-active);
+  padding: 0;
 }
 
 &__checkbox:checked {
-  color: rgb(148, 56, 148);
+  border-color: rgb(148, 56, 148);
   color: var(--color-btn-active);
 }
 }
