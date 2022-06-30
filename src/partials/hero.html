@@ -1,5 +1,5 @@
 <section class="hero " id="hero">
-  <div class="container">
+  <div class="container hero__box">
   <div class="hero__container">
     <h1 class="hero__title">
       ice cream made with
@@ -17,13 +17,13 @@
       <ul class="hero__statistics--list">
         <li class="hero__statistics--item">
           <p class="hero__statistics--text">
-             <span class="hero__statistics--span">16</span>cafes
+             <span data-digits-counter class="hero__statistics--span" id="cafes">16</span>cafes
           </p>
       
         </li>
         <li class="hero__statistics--item">
           <p class="hero__statistics--text">
-            <span class="hero__statistics--span">23</span>food trucks
+            <span data-digits-counter class="hero__statistics--span" id="trucks">23</span>food trucks
           </p>
         </li>
       </ul>
@@ -121,13 +121,11 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
       </p>
-      <div class="description__btn">
-        <a href="#about">
+      <a class="description__btn btn" href="#about" aria-label="go to 'about us' section">
           <svg width="8" height="8" class="description__icon">
             <use href="/src/images/symbol-defs.svg#icon-arrow-right"></use>
           </svg>
-        </a>
-      </div>
+      </a>
     </div>
   </div>
   </div>
