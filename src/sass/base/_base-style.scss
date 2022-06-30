@@ -47,6 +47,10 @@ body {
    min-width: 320px;
    width: 100vw;
 
+   @media screen and (min-width: 420px) {
+      width: 420px;
+   }
+
    @include mq(tablet) {
       width: 768px;
    }

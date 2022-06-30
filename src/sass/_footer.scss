@@ -137,6 +137,10 @@
       height: 1px;
       background-color: #E1E1E1;
       margin-left: -20px;
+
+      @media screen and (min-width: 420px) {
+        margin-left: calc( (102vw - 420px) / -2);
+      }
       @include mq (tablet) {
         margin-left: calc( (104vw - 768px) / -2);
       }
