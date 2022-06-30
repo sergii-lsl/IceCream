@@ -159,7 +159,7 @@
   color: rgb(148, 56, 148);
   position: absolute;
   top:-16px;
-  left:15px;
+  left:4px;
   // transform: translate(-17px, -15px);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -186,6 +186,7 @@ transform: translate(-16px, -31px);
   margin-right: auto;
   background-color: var(--color-btn-active);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .button-sub__text {
