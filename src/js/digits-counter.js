@@ -55,7 +55,7 @@ function windowLoad() {
 
     }, options);
 
-    let sections = document.querySelectorAll('.advantages');
+    let sections = document.querySelectorAll('.advantages, .hero__statistics');
     //if (sections.length) {
         sections.forEach(section => {
             observer.observe(section);
