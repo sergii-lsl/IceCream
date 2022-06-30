@@ -218,13 +218,17 @@
   box-shadow: 0px 8px 30px rgba(81, 6, 25, 0.4);
 }
 
-.current {
+.contact__button {
   display: flex;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   align-items: center;
   text-align: center;
+}
+
+
+.current {
   color: var(--color-white);
   background-color: var(--color-text-title);
   margin-bottom: 10px;
