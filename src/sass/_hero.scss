@@ -30,7 +30,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--color-white);
   @include mq(tablet) {
     max-width: 162px;
     font-size: 22px;
@@ -72,6 +72,7 @@
     margin-bottom: 40px;
   }
 }
+
 .hero__item:not(:last-child) {
   margin-right: 15px;
 }
@@ -140,7 +141,7 @@
   left: 120px;
   top: 92px;
   z-index: 2;
-  
+
   @media screen and (min-width: 400px) and (max-width: 767px) {
     left: 50%;
     transform: translateX(-50%);
@@ -233,6 +234,12 @@
     height: 26px;
   }
 }
+.description__btn:hover,
+.description__btn:focus {
+  animation: pulse 1.4s;
+  box-shadow: 0 0 0 2em #fff0;
+}
+
 .description__icon {
   fill: var(--color-text-title);
 }
@@ -246,104 +253,60 @@
     left: 16px;
   }
 }
-.decoration__circle {
+.hero__statistics {
   display: none;
-  visibility: hidden;
-  @include mq(tablet) {
-    display: block;
-    position: absolute;
-    visibility: visible;
-    width: 16px;
-    height: 16px;
-    left: 718px;
-    top: 94px;
-    z-index: 1;
-    border-radius: 50%;
-    background: var(--color-white);
-    @include mq(desktop) {
-      height: 30px;
-      width: 30px;
-      left: 1154px;
-      top: 152px;
-      border-radius: 50px;
-    }
-  }
-}
-.decoration__circle--position {
-  top: 151px;
-  @include mq(desktop) {
-    left: 1154px;
-    top: 244px;
-  }
-}
-.decoration__number {
-  display: none;
-  visibility: hidden;
-  @include mq(tablet) {
-    display: block;
-    position: absolute;
-    visibility: visible;
-    width: 33px;
-    height: 32px;
-    left: 691px;
-    top: 96px;
-    z-index: 2;
-    font-family: 'Titan One';
-    font-style: normal;
-
-    font-size: 28px;
-    line-height: 32px;
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--color-text-title);
-    @include mq(desktop) {
-      left: 1112px;
-      top: 156px;
-      font-size: 46px;
-
-      line-height: 53px;
-    }
-  }
-}
-.decoration__number--position {
-  top: 152px;
-  @include mq(desktop) {
-    left: 1107px;
-    top: 247px;
-  }
-}
-.decoration__text {
-  display: none;
-  visibility: hidden;
+  visibility: visible;
+  position: absolute;
+  top: 12px;
+  right: 0;
   @include mq(tablet) {
     display: block;
     visibility: visible;
-    z-index: 2;
-    position: absolute;
-    left: 704px;
-    top: 128px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-size: 8px;
-    line-height: 10px;
-    text-align: right;
-    color: var(--color-white);
   }
+}
+.hero__statistics--item:not(:last-child) {
+  margin-bottom: 13px;
   @include mq(desktop) {
-    left: 1131px;
-    top: 211px;
-
-    font-style: normal;
+    margin-bottom: 15px;
+  }
+}
+.hero__statistics--text {
+  color: var(--color-white);
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  position: relative;
+  z-index: 4;
+  @include mq(desktop) {
     font-size: 14px;
-    line-height: 18px;
   }
 }
-.decoration__text--position {
-  left: 683px;
-  top: 184px;
+.hero__statistics--text:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -3px;
+  right: -10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  z-index: -1;
   @include mq(desktop) {
-    left: 1092px;
-    top: 302px;
+    top: -8px;
+    left: 66px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.hero__statistics--span {
+  display: block;
+  color: var(--color-text-title);
+  font-family: Titan One, cursive;
+  font-size: 28px;
+  line-height: 1.14;
+  @include mq(desktop) {
+    font-size: 46px;
   }
 }

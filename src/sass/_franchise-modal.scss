@@ -21,6 +21,18 @@
      max-height: 95vh;
    }
 
+   @include mq (tablet) {
+    background-image: url(../images/icecreamh800.png);
+    background-position: 25px 100px;
+    background-repeat: no-repeat;
+    background-size: 30%;
+   }
+
+   @include mq (desktop) {
+    background-image: url(../images/icecreambg.png);
+
+   }
+
    &.active-step {
       opacity: 1;
       visibility: visible;
@@ -69,6 +81,13 @@
 		&__form {
          display: flex;
          flex-direction: column;
+         align-content: center;
+
+         @include mq(tablet) {
+           width: 65%;
+           align-items: stretch;
+           align-self: flex-end;
+         }
 		}
 
 		&__form-label {
@@ -78,7 +97,9 @@
          font-weight: 700;
          font-size: 14px;
          line-height: 18px;
-         color: rgb(148, 56, 148);         
+         color: rgb(148, 56, 148);
+         position: relative;
+
 		}
 
 		&__form-input {
@@ -143,4 +164,17 @@
 .agreement {
   margin-top: 8px;
   display: flex;
+}
+
+.label__title {
+  position: absolute;
+  top:-16px;
+  left:15px;
+  // transform: translate(-17px, -15px);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise-modal__form-input:focus + .label__title,
+.franchise-modal__form-input:not(:placeholder-shown).label__title {
+transform: translate(-16px, -31px);
 }

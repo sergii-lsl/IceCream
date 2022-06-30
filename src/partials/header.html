@@ -1,11 +1,11 @@
 <header class="header" id="header">
   <div class="container container--flex">
+    <a href="/src/index.html">
+      <svg class="logo" width="199" height="50">
+        <use href="/src/images/symbol-defs.svg#logo"></use>
+      </svg>
+    </a>
     <nav class="navigation">
-      <a href="/src/index.html">
-        <svg class="logo" width="199" height="50">
-          <use href="/src/images/symbol-defs.svg#logo"></use>
-        </svg>
-      </a>
       <ul class="navigation__list">
         <li class="navigation__item"><a class="navigation__link" href="#header">Home</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#our-products">About us</a></li>
@@ -13,13 +13,13 @@
         <li class="navigation__item"><a class="navigation__link" href="#products">Our products</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#contact">Contact</a></li>
       </ul>
-      <button data-modal-open-desktop class="button-buy--leptop" type="button">
-        <span class="button-buy__text">Buy now</span>
-        <svg class="button-buy__icon" width="8" height="10">
-          <use class="vector-red" href="/src/images/symbol-defs.svg#icon-Vector-2"></use>
-        </svg>
-      </button>
     </nav>
+    <button data-modal-open-desktop class="button-buy--leptop" type="button">
+      Buy now
+      <svg class="button-buy__icon--tablet" width="8" height="10">
+        <use class="vector-red" href="/src/images/symbol-defs.svg#icon-Vector-2"></use>
+      </svg>
+    </button>
     <div class="mobile-menu">
       <button type="button" class="button-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg width="20" height="12">
@@ -27,8 +27,8 @@
         </svg>
       </button>
       <button data-modal-open-tablet class="button-buy--tablet" type="button">
-        <span class="button-buy__text">Buy now</span>
-        <svg class="button-buy__icon" width="8" height="10">
+        Buy now
+        <svg class="button-buy__icon--tablet" width="8" height="10">
           <use class="vector-red" href="/src/images/symbol-defs.svg#icon-Vector-2"></use>
         </svg>
       </button>
