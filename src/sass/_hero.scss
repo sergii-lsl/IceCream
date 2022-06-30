@@ -1,14 +1,9 @@
-.hero__container {
-  position: relative;
-  z-index: 3;
-}
-.hero {
+.hero__box {
   overflow: hidden;
   position: relative;
   height: 502px;
   padding-top: 194px;
 
-  background-color: var(--color-bg-main);
   @include mq(tablet) {
     height: 416px;
     padding-top: 102px;
@@ -17,6 +12,14 @@
     height: 664px;
     padding-top: 147px;
   }
+}
+
+.hero__container {
+  position: relative;
+  z-index: 3;
+}
+.hero {
+  background-color: var(--color-bg-main);
 }
 
 .hero__title {
