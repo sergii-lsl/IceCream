@@ -139,7 +139,7 @@
       margin-left: -20px;
 
       @media screen and (min-width: 420px) {
-        margin-left: calc( (102vw - 420px) / -2);
+        margin-left: calc( (106vw - 420px) / -2);
       }
       @include mq (tablet) {
         margin-left: calc( (104vw - 768px) / -2);
