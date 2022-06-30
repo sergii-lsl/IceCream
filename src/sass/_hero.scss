@@ -1,15 +1,15 @@
 .hero__box {
   overflow: hidden;
   position: relative;
-  height: 502px;
   padding-top: 194px;
+  padding-bottom: 158px;
 
   @include mq(tablet) {
-    height: 416px;
+    padding-bottom: 16px;
     padding-top: 102px;
   }
   @include mq(desktop) {
-    height: 664px;
+    padding-bottom: 60px;
     padding-top: 147px;
   }
 }
