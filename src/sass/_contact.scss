@@ -1,10 +1,7 @@
 .contacts {
-
-  background-image: linear-gradient(
-    to bottom,
-    var(--color-white),
-    var(--color-bg-light)
-  );
+  background-image: linear-gradient(to bottom,
+  var(--color-white),
+  var(--color-bg-light));
 }
 
 .contact__title {
@@ -24,6 +21,7 @@
   color: var(--color-white);
   background-color: var(--color-coffee-style);
   border-radius: 6px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
     max-width: 73px;
@@ -71,9 +69,9 @@
   border-radius: 24px;
   padding: 40px 32px 40px 32px;
   background-color: var(--color-white);
-  border: solid 1px rgba(0,0,0,0.12);
+  border: solid 1px rgba(0, 0, 0, 0.12);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   @media screen and (min-width: 768px) {
     max-width: 224px;
   }
@@ -90,7 +88,8 @@
 }
 
 .contact__location,
-.contact__sheddle {
+.contact__sheddle,
+.contact__regular {
   border-bottom: solid 1px #e1e1e1;
   padding-bottom: 24px;
 }
@@ -115,6 +114,10 @@
 
 .contact__data {
   padding-bottom: 0;
+}
+
+.contact__bolt {
+  margin-bottom: 8px;
 }
 
 .contact__bolt,
@@ -179,30 +182,16 @@
 }
 
 .contact__button__list {
-    list-style: none;
   padding: 0;
   margin-top: 32px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     margin-top: 60;
-    align-items: center;
-    justify-content: center;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 66;
-  }
-}
-
-.button__item:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.button__item:not(:last-child) {
-  @media screen and (min-width: 768px) {
-    margin-right: 12px;
-    margin-bottom: 0px;
   }
 }
 
@@ -219,18 +208,17 @@
   color: var(--color-text-title);
   background-color: var(--color-white);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .contact__button:hover {
   box-shadow: 0px 8px 30px rgba(81, 6, 25, 0.4);
 }
 
-.current {
-  color: var(--color-white);
-  background-color: var(--color-text-title);
-}
-
-.contact__button--text {
+.contact__button {
   display: flex;
   font-weight: 700;
   font-size: 16px;
@@ -239,9 +227,23 @@
   text-align: center;
 }
 
+
+.current {
+  color: var(--color-white);
+  background-color: var(--color-text-title);
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    margin-right: 12px;
+    margin-left: auto;
+  }
+}
+
 .contact__button--icon {
   margin-left: 15px;
   margin-top: 3px;
+  margin-bottom: 0px;
 }
 
 .button__link {
