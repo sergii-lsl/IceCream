@@ -10,10 +10,10 @@
     gap: 2px;
   }
   @include mq(tablet) {
-    gap: 4px;
+    gap: 6px;
   }
   @include mq(desktop) {
-    gap: 6px;
+    gap: 8px;
   }
 
   &__section {
