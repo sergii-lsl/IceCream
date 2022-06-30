@@ -15,21 +15,24 @@
 }
 
 .container--flex {
+top: 0;
+  z-index: 500;
+  left:50%;
+  transform: translateX(-50%);
+
   @include mq (not-desktop) {
 
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 0;
-  z-index: 500;
+ 
   background-color:#ffb8caf2;
   border-radius: 7px;
 }
   @include mq(desktop) {
      position: fixed;
-  top: 0;
-  z-index: 500;
+
     background-color:#ffb8caf2;
      border-radius: 7px;
  }
